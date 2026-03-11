@@ -4,7 +4,7 @@ class menuServicios()
 { 
     static void Main()
     {
-        int opcion;
+        int op;
 
         Console.WriteLine("======== Menú de servicio clínico ======= \n");
         Console.WriteLine("1. Consulta");
@@ -13,42 +13,48 @@ class menuServicios()
         Console.WriteLine("4. Farmarcia");
         Console.WriteLine("5. salir");
         Console.WriteLine("\n==========================================");
-        Console.WriteLine("\nSeleccione una opción: "); 
+        Console.WriteLine("\n> Seleccione una opción: "); 
 
-        int.TryParse(Console.ReadLine(), out opcion);
+        int.TryParse(Console.ReadLine(), out op);
 
-        switch (opcion)
+        switch (op)
         {
             case 1:
+                Console.WriteLine("───────────────────────────────────");
                 Console.WriteLine("Servicio: Consulta");
-                Console.WriteLine("Precio: $50");
+                Console.WriteLine("Precio: $50.000");
                 Console.WriteLine("Tiempo de espera: 20 minutos");
                 break;
 
             case 2:
+                Console.WriteLine("───────────────────────────────────");
                 Console.WriteLine("Servicio: Laboratorio");
-                Console.WriteLine("Precio: $80");
+                Console.WriteLine("Precio: $80.000");
                 Console.WriteLine("Tiempo de espera: 30 minutos");
                 break;
 
             case 3:
+                Console.WriteLine("───────────────────────────────────");
                 Console.WriteLine("Servicio: Rayos X");
-                Console.WriteLine("Precio: $120");
+                Console.WriteLine("Precio: $120.000");
                 Console.WriteLine("Tiempo de espera: 40 minutos");
                 break;
 
             case 4:
+                Console.WriteLine("───────────────────────────────────");
                 Console.WriteLine("Servicio: Farmacia");
                 Console.WriteLine("Precio: Depende del medicamento");
                 Console.WriteLine("Tiempo de espera: 10 minutos");
                 break;
 
             case 5:
-                Console.WriteLine("saliendo del sistema");
+                Console.WriteLine("───────────────────────────────────");
+                Console.WriteLine("Saliendo del sistema");
                 break;
 
             default:
-                Console.WriteLine("Opción inválida. Por favor seleccione una opción del 1 al 5-");
+                Console.WriteLine("───────────────────────────────────");
+                Console.WriteLine("Opción inválida.");
                 break;
         }
 
