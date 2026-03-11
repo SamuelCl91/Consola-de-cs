@@ -1,0 +1,10 @@
+using System;
+
+class controlVacuna()
+{
+  static void Main()
+  {
+    Console.WriteLine("Por ahora no hay nada");
+    Console.WriteLine("Estamos en proceso");
+  }
+}
