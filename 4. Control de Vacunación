@@ -1,6 +1,6 @@
 using System;
 
-class controlVacuna()
+class controlVacuna
 {
     static void Main()
     {
